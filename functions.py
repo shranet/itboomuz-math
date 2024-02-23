@@ -50,13 +50,15 @@ def my_pi2():
     return 1 / (Decimal(2 * math.sqrt(2)) / 9801 * sum_result)
 
 
-print("pi/4  = ", math.sin(math.pi / 4), my_sin(math.pi / 4))
-print("pi/3  = ", math.sin(math.pi / 3), my_sin(math.pi / 3))
-print("pi/2  = ", math.sin(math.pi / 2), my_sin(math.pi / 2))
-print("  pi  = ", math.sin(math.pi), my_sin(math.pi))
-print("-pi/5 =", math.sin(-math.pi/5), my_sin(-math.pi/5))
+print("   sin(pi / 4) =", math.sin(math.pi / 4))
+print("my_sin(pi / 4) =", my_sin(math.pi / 4))
+
+print("   sin(pi / 5) =", math.sin(math.pi / 5))
+print("my_sin(pi / 5) =", my_sin(math.pi / 5))
 
 print()
-print("pi =", math.pi, my_pi(), my_pi2())
+print(" math.pi =", math.pi)
+print(" my_pi() =", my_pi())
+print("my_pi2() =", my_pi2())
 
 
