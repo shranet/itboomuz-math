@@ -12,6 +12,9 @@ for y in range(img.height):
         k = (r + g + b) // 3
         img_data[y, x] = (k, k, k)
 
+# Rasm qilib saqlash
+Image.fromarray(img_data).save("../output/grayscale.png")
+
 plt.imshow(img_data)
 plt.title('itboom.uz')
 plt.axis('off')  # Hide the axis

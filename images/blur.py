@@ -50,6 +50,9 @@ if __name__ == "__main__":
     for y in range(img.height):
         render(y)
 
+    # Rasm qilib saqlash
+    # Image.fromarray(img_data).save("blur.png")
+
     plt.imshow(img_data)
     plt.title('itboom.uz')
     plt.axis('off')  # Hide the axis

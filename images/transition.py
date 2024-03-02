@@ -26,7 +26,12 @@ def update_transition(frame):
             data2_alpha = img2_data[w:w + w2] * alpha_0_3[:w2]
             data2 = img2_data[w + w2:]
 
-            im.set_array(np.concatenate((data1, (data1_alpha + data2_alpha).astype(int), data2), axis=0))
+            result_img_data = np.concatenate((data1, (data1_alpha + data2_alpha).astype(int), data2), axis=0, dtype=int)
+
+            # Rasm qilib saqlash
+            # Image.fromarray(result_img_data.astype(np.uint8)).save(f"../output/anim/{frame}.png")
+
+            im.set_array(result_img_data)
     return im
 
 
